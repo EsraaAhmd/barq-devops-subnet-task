@@ -63,37 +63,17 @@ for i in range(len(networks)):
             print(f"{networks[i]} overlaps with {networks[j]}")
 ```
 
-And manually, follow the steps:
-1. Each IP address was mapped to its respective subnet using the associated subnet mask.
-2. All network addresses were computed and compared using Python's `ipaddress` module.
-3. Each resulting subnet range was evaluated against others to check for any overlaps.
+And manually to detect any possible overlaps, each IP was converted to its full subnet using its mask. These subnets were then compared against one another using their network ranges. The verification process confirmed:
 
-
-
-### ✅ Findings:
-
-- All subnets in the dataset have **unique network addresses**.
-- No two subnets share common IP ranges.
-- Each IP belongs to a **distinct and non-overlapping subnet block**.
-
-This confirms the IP addressing scheme is well-structured and avoids routing conflicts or duplicate assignments.
-
-
-
-### 📊 Subnet Distribution Summary:
-
-| Subnet Mask | Number of Subnets | Usable Hosts/Subnet |
-|-------------|--------------------|----------------------|
-| `/24`       | 10                 | 254 hosts            |
-| `/23`       | 7                  | 510 hosts            |
-| `/22`       | 8                  | 1,022 hosts          |
+- Each subnet has a **unique network address**
+- No two subnets share the same or overlapping IP ranges
+- All IPs are isolated within **distinct, non-intersecting subnet blocks**
 
 
 
 ### ✅ Conclusion:
 
 > Based on both manual review and programmatic verification, **all 25 subnets are distinct and non-overlapping**.  
-> The network design ensures each subnet is isolated, preventing address conflicts and supporting scalable IP management.
 
 ---
 ## 3. What is the smallest and largest subnet in terms of address space?
