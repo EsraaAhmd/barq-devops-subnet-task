@@ -140,4 +140,11 @@ This is not just a space-saving trick — it's a best practice that improves net
 
 ---
 
-📁 *This report was prepared by Esraa as part of the Barq DevOps Internship Task.*
+## 🧾 Author
+
+Esraa — as part of the Barq DevOps Internship Task
+
+Date: July 2025
+
+
+
