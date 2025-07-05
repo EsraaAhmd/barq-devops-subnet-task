@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.xlsx
+*.png
+*.json
+network_plot.png
+ip_data.xlsx
+subnet_report_grouped_ip.json
+subnet_report.csv
+
