@@ -9,13 +9,21 @@ It calculates subnet details (CIDR, network, usable hosts), detects overlapping 
 
 ## 📂 Project Structure
 ├── ip_data.xlsx # Input Excel file with IPs and Subnet Masks
+
 ├── subnet_analyzer.py # Script to analyze IPs and generate subnet_report.csv + JSON
+
 ├── visualize.py # Script to generate bar chart from subnet_report.csv
+
 ├── subnet_report.csv # Output CSV after analysis
+
 ├── subnet_grouped_ip.json # Output JSON with grouped IPs
+
 ├── network_plot.png # Bar chart image
+
 ├── report.md # Answers to the analysis questions
+
 ├── Dockerfile # Containerizes the solution
+
 ├── .dockerignore 
 
 
