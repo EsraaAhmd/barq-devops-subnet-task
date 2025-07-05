@@ -96,7 +96,6 @@ And manually to detect any possible overlaps, each IP was converted to its full 
   Example:
   - `192.168.1.24/24` → 254 usable hosts
 
-> Note: The dataset does not contain any small subnets such as `/30`, `/31`, or `/32`, which are typically used in point-to-point networks.
 
 ---
 
