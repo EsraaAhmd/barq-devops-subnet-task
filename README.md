@@ -35,15 +35,15 @@ It calculates subnet details (CIDR, network, usable hosts), detects overlapping 
 
 ### 1. Install dependencies
 ```terminal
-- pip install pandas matplotlib openpyxl
+pip install pandas matplotlib openpyxl
 ```
 ### 2. Run the Analyzer
 ```
-- python subnet_analyzer.py
+python subnet_analyzer.py
 ```
 ### 3. Run the Visualizer
 ```
-- python visualize.py
+python visualize.py
 ```
 
 ---
@@ -51,20 +51,22 @@ It calculates subnet details (CIDR, network, usable hosts), detects overlapping 
 > ⚠️ Requires Docker installed on your system.
 
 ### 1. Build the Docker image
-- docker build -t subnet-analysis .
+```terminal
+docker build -t subnet-analysis .
+```
 
 ### 2. Run the container (and bind current directory)
 > ⚠️For Windows Powershell.
-
-- docker run --rm -v ${PWD}:/app subnet-analysis
-
+```terminal
+docker run --rm -v ${PWD}:/app subnet-analysis
+```
 ---
-📊 Sample Output
+## 📊 Sample Output
 
 ![Output](https://github.com/user-attachments/assets/eee3f7c0-251c-42bb-8bed-8e6949371547)
 
 ---
-🧾 Author
+## 🧾 Author
 
 Esraa — as part of the Barq DevOps Internship Task
 Date: July 2025
