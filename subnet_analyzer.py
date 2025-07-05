@@ -1,6 +1,9 @@
 import pandas as pd             #deals with the Excel file
 import ipaddress                #deals with IPs 
 
+import json
+from collections import defaultdict
+
 #_________________________________________________________
 #_________________Read the Excel file_____________________
 #_________________________________________________________
@@ -52,8 +55,6 @@ print("Subnet analysis complete. Output saved to 'subnet_report.csv'")
 #_______________Group IPs by subnet/CIDR__________________
 #_________________________________________________________
 
-import json
-from collections import defaultdict
 
 # Build nested dict: { Subnet Mask: { Network: IP } }
 subnet_json = defaultdict(dict)
